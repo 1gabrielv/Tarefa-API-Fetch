@@ -1,6 +1,6 @@
 # 🧥 Roup{IN}nha - Sistema de Gerenciamento de Produtos
 
-Sistema web para gerenciar produtos de uma loja fictícia, feito com HTML, CSS e JavaScript, utilizando **JSON Server** como API REST FETCH.
+Sistema web para gerenciar produtos de uma loja fictícia, feito com HTML, CSS e JavaScript, utilizando **JSON Server** como API REST Fetch.
 
 ## ⚙️ Funcionalidades
 
@@ -21,11 +21,11 @@ Sistema web para gerenciar produtos de uma loja fictícia, feito com HTML, CSS e
 1. Instale as dependências:
    npm install
 
-2. Inicie o servidor:
+2. Inicie o JSON Server:
    npm run start-api
 
-3. Acesse o LiveServer:
-    (O projeto funciona apenas com o server rodando na raíz do programa)
+3. Acesse com o Live Server:
+   O projeto pode ser rodado com o JSON Server em qualquer pasta, desde que o caminho para o `products.json` esteja correto.
 
 ## 🏆 Objetivos Atendidos
 
@@ -35,5 +35,3 @@ Sistema web para gerenciar produtos de uma loja fictícia, feito com HTML, CSS e
 ✅ Código limpo e organizado
 
 ---
-
-
