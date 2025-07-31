@@ -11,12 +11,12 @@ let allProducts = []; // Array para armazenar todos os produtos do JSON
 // --- Função para buscar os produtos do JSON ---
 async function fetchProducts() {
     try {
-        const response = await fetch('../products.json'); // Caminho para o seu arquivo JSON
+        const response = await fetch('http://localhost:3000/products'); // Buscar do json-server
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);
         }
-        const data = await response.json();
-        allProducts = data.products; // Armazena todos os produtos
+        const products = await response.json();
+        allProducts = products; // O json-server retorna diretamente o array de produtos
         displayProducts(currentPage); // Exibe a primeira página
         setupPagination();            // Configura os botões de paginação
     } catch (error) {
