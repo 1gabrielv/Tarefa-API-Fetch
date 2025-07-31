@@ -1,0 +1,224 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 139px;
+    background-color: #415FCE;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 64px;
+}
+
+#camisa-header{
+    margin-left: 70px;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    margin-right: 60px;
+}
+
+h2{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.form{
+    background-color: #247BB1;
+    border-radius: 12px;
+    width: 1209px;
+    height: 493px;
+    
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.esq, .dir{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 70px;
+}
+
+input{
+    width: 460px;
+    height: 48px;
+    opacity: 1;
+    border-radius: 12px;
+    background: #F0EBEB;
+    border: none;
+    padding: 0 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+label{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+button{
+    width: 167px;
+    height: 45px;
+    opacity: 1;
+    border-radius: 12px;
+    padding: 8px 25px;
+    gap: 8px;
+    background-color: #1F9B5F;
+    border: none;
+    cursor: pointer;
+    
+    font-family: Inter;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    color: white;
+    
+    margin: 20px auto;
+    display: block;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.footer-row{
+    background-color: #FCF7F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.endereco-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 302px;
+    margin-left: 50px;
+}
+
+#end{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #4E8098;
+}
+
+#contato{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #4E8098;
+}
+
+.resto-end{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.resto-end p{
+    margin: 0;
+    padding: 0;
+}
+
+.resto-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 302px;
+}
+
+.resto-contato{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    margin-right: 50px;
+}
+
+.resto-contato p{
+    margin: 0;
+    padding: 0;
+}
+
+.logos-contato{
+    margin-top: 15px;
+}
+
+
+
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 34px;
+    background-color: #415FCE;
+}

@@ -1,0 +1,401 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 139px;
+    background-color: #415FCE;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 64px;
+}
+
+#camisa-header{
+    margin-left: 70px;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    margin-right: 60px;
+}
+
+
+
+/* Estilos para a Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 40px 0;
+
+
+}
+
+#btn-add{
+    width: 1310px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #1F9B5F;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn-add:hover {
+    background-color: #18824F;
+    transform: translateY(-2px);
+}
+
+/* Estilos para o Grid de Produtos (já deve estar aí, mas garantindo) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 50px;
+    column-gap: 150px; 
+    width: 90%;
+    max-width: 1200px; 
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: -110px;
+}
+
+
+/* --- NOVOS ESTILOS PARA O CARD DO PRODUTO (BASEADO NA IMAGEM) --- */
+
+.product-card {
+    background-color: #fcf7f8; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    position: relative;
+    min-height: 480px; 
+    width: 408px;
+    height: 819px;
+}
+
+/* --- Seção Superior do Card (Avaliação e Botões de Ação) --- */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    z-index: 10;
+}
+
+.rating-display {
+    width: 119px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.rating-number {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.rating-star {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+}
+
+.card-actions {
+    display: flex;
+    gap: 30px;
+}
+
+.action-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.action-button img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+
+/* --- Contêiner da Imagem --- */
+.card-image-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.product-image {
+    max-width: 90%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 0;
+    margin: 0;
+}
+
+/* --- Seção de Detalhes do Produto (Área Azul) --- */
+.card-details {
+    background-color: #243B98;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 200px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #8CBF26;
+}
+
+.product-category {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    opacity: 0.8;
+    color: white;
+}
+
+.product-description {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.product-full-description {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 344px;
+    height: 69px;
+    margin: 10px 0 10px 0;
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-price {
+    font-size: 40px;
+    font-weight: 700;
+    color: #8CBF26;
+    margin: 15px 0 0 0;
+    text-align: right;
+    align-self: flex-end;
+}
+
+/* --- Estilos para a Paginação (mantenha como está) --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+/* Estilos para as setas de navegação */
+.pagination-arrow {
+    background-color: transparent;
+    color: #415FCE;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-arrow:hover:not(:disabled) {
+    color: #314baf;
+    transform: scale(1.2);
+}
+
+.pagination-arrow:disabled {
+    color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Estilos para os círculos das páginas */
+.pagination-circle {
+    background-color: #e0e0e0;
+    color: #666;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.pagination-circle:hover {
+    background-color: #415FCE;
+    color: white;
+    transform: scale(1.1);
+}
+
+.pagination-circle.active {
+    background-color: #1F9B5F;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+.footer-row{
+    background-color: #FCF7F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.endereco-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 302px;
+    margin-left: 50px;
+}
+
+#end{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #4E8098;
+}
+
+#contato{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #4E8098;
+}
+
+.resto-end{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.resto-end p{
+    margin: 0;
+    padding: 0;
+}
+
+.resto-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 302px;
+}
+
+.resto-contato{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    margin-right: 50px;
+}
+
+.resto-contato p{
+    margin: 0;
+    padding: 0;
+}
+
+.logos-contato{
+    margin-top: 15px;
+}
+
+
+
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 34px;
+    background-color: #415FCE;
+}
