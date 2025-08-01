@@ -36,6 +36,6 @@ Sistema web para gerenciar produtos de uma loja fictícia, feito com HTML, CSS e
 
 ## ⚠️ Observações Importantes
 
-**Imagens dos Produtos**: Não foi possível exibir as imagens reais dos produtos pois as URLs fornecidas no JSON eram inexistentes ou inválidas. O sistema está preparado para receber URLs válidas de imagens.
+**Imagens dos Produtos**: Não foi possível exibir as imagens reais dos produtos, pois as URLs fornecidas no JSON eram inexistentes ou inválidas. O sistema, no entanto, está preparado para receber URLs válidas de imagens — ou seja, a imagem será exibida corretamente caso você insira uma URL válida ao criar um produto.
 
 ---
